@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Sidebar - Visual Melhorado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+  <div class="d-flex">
+    <!-- Desktop Sidebar -->
+    <aside id="sidebar-desktop" class="sidebar-wrapper sidebar-desktop">
+      <div class="sidebar-logo">
+        <a href="#">Sian</a>
+      </div>
+      <!-- Sidebar Navigation -->
+      <ul class="sidebar-nav p-0 m-0">
+        <li class="sidebar-header">
+          Tools & Components
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link active-link">
+            <i class="bi bi-person me-2"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <i class="bi bi-list-check me-2"></i>
+            <span>Task</span>
+          </a>
+        </li>
+        <li class="sidebar-header">
+          Pages
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+            data-bs-target="#auth-desktop" aria-expanded="false" aria-controls="auth-desktop">
+            <i class="bi bi-lock me-2"></i>
+            <span>Auth</span>
+          </a>
+          <ul id="auth-desktop" class="sidebar-dropdown list-unstyled collapse">
+            <li class="sidebar-nav-item">
+              <a href="#" class="sidebar-nav-link">Login</a>
+            </li>
+            <li class="sidebar-nav-item">
+              <a href="#" class="sidebar-nav-link">Register</a>
+            </li>
+            <li class="sidebar-nav-item">
+              <a href="#" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                data-bs-target="#outros-desktop" aria-expanded="false" aria-controls="outros-desktop">
+                <span>Outros</span>
+              </a>
+              <ul id="outros-desktop" class="sidebar-dropdown list-unstyled collapse">
+                <li class="sidebar-nav-item">
+                  <a href="#" class="sidebar-nav-link">Outro 1</a>
+                </li>
+                <li class="sidebar-nav-item">
+                  <a href="#" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                    data-bs-target="#sub-outros-desktop" aria-expanded="false" aria-controls="sub-outros-desktop">
+                    <span>Sub Outros</span>
+                  </a>
+                  <ul id="sub-outros-desktop" class="sidebar-dropdown list-unstyled collapse">
+                    <li class="sidebar-nav-item">
+                      <a href="#" class="sidebar-nav-link">Sub Item 1</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                      <a href="#" class="sidebar-nav-link">Sub Item 2</a>
+                    </li>
+                    <li class="sidebar-nav-item">
+                      <a href="#" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                        data-bs-target="#deep-menu-desktop" aria-expanded="false" aria-controls="deep-menu-desktop">
+                        <span>Nível 4</span>
+                      </a>
+                      <ul id="deep-menu-desktop" class="sidebar-dropdown list-unstyled collapse">
+                        <li class="sidebar-nav-item">
+                          <a href="#" class="sidebar-nav-link">Item Profundo 1</a>
+                        </li>
+                        <li class="sidebar-nav-item">
+                          <a href="#" class="sidebar-nav-link">Item Profundo 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidebar-nav-item">
+                  <a href="#" class="sidebar-nav-link">Outro 2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <i class="bi bi-bell me-2"></i>
+            <span>Notification</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <i class="bi bi-gear me-2"></i>
+            <span>Setting</span>
+          </a>
+        </li>
+      </ul>
+      <!-- Sidebar Navigation Ends -->
+      <div class="sidebar-footer">
+        <a href="#" class="sidebar-nav-link">
+          <i class="bi bi-box-arrow-left me-2"></i>
+          <span>Exit</span>
+        </a>
+      </div>
+    </aside>
+    <!-- Desktop Sidebar Ends -->
+
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-start offcanvas-custom" tabindex="-1" id="sidebar-mobile"
+      aria-labelledby="sidebarLabel">
+      <div class="offcanvas-header">
+        <div class="sidebar-logo">
+          <a href="#" id="sidebarLabel">Sian</a>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Sidebar Navigation -->
+        <ul class="sidebar-nav p-0 m-0">
+          <li class="sidebar-header">
+            Tools & Components
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#" class="sidebar-nav-link active-link">
+              <i class="bi bi-person me-2"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#" class="sidebar-nav-link">
+              <i class="bi bi-list-check me-2"></i>
+              <span>Task</span>
+            </a>
+          </li>
+          <li class="sidebar-header">
+            Pages
+          </li>
+          
+          <li class="sidebar-nav-item">
+            <a href="#" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+              data-bs-target="#auth-mobile" aria-expanded="false" aria-controls="auth-mobile">
+              <i class="bi bi-lock me-2"></i>
+              <span>Auth</span>
+            </a>
+            <ul id="auth-mobile" class="sidebar-dropdown list-unstyled collapse">
+              <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">Login</a>
+              </li>
+              <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">Register</a>
+              </li>
+              <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                  data-bs-target="#outros-mobile" aria-expanded="false" aria-controls="outros-mobile">
+                  <span>Outros</span>
+                </a>
+                <ul id="outros-mobile" class="sidebar-dropdown list-unstyled collapse">
+                  <li class="sidebar-nav-item">
+                    <a href="#" class="sidebar-nav-link">Outro 1</a>
+                  </li>
+                  <li class="sidebar-nav-item">
+                    <a href="#" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                      data-bs-target="#sub-outros-mobile" aria-expanded="false" aria-controls="sub-outros-mobile">
+                      <span>Sub Outros</span>
+                    </a>
+                    <ul id="sub-outros-mobile" class="sidebar-dropdown list-unstyled collapse">
+                      <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-nav-link">Sub Item 1</a>
+                      </li>
+                      <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-nav-link">Sub Item 2</a>
+                      </li>
+                      <li class="sidebar-nav-item">
+                        <a href="#" class="sidebar-nav-link collapsed has-dropdown" data-bs-toggle="collapse"
+                          data-bs-target="#deep-menu-mobile" aria-expanded="false" aria-controls="deep-menu-mobile">
+                          <span>Nível 4</span>
+                        </a>
+                        <ul id="deep-menu-mobile" class="sidebar-dropdown list-unstyled collapse">
+                          <li class="sidebar-nav-item">
+                            <a href="#" class="sidebar-nav-link">Item Profundo 1</a>
+                          </li>
+                          <li class="sidebar-nav-item">
+                            <a href="#" class="sidebar-nav-link">Item Profundo 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-nav-item">
+                    <a href="#" class="sidebar-nav-link">Outro 2</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#" class="sidebar-nav-link">
+              <i class="bi bi-bell me-2"></i>
+              <span>Notification</span>
+            </a>
+          </li>
+          <li class="sidebar-nav-item">
+            <a href="#" class="sidebar-nav-link">
+              <i class="bi bi-gear me-2"></i>
+              <span>Setting</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Sidebar Navigation Ends -->
+        <div class="sidebar-footer mt-auto">
+          <a href="#" class="sidebar-nav-link">
+            <i class="bi bi-box-arrow-left me-2"></i>
+            <span>Exit</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Offcanvas Ends -->
+
+    <!-- Main Component -->
+    <div class="main flex-fill">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Botão toggler à esquerda -->
+          <button class="btn btn-primary me-3" type="button" id="toggle-sidebar">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <!-- Dropdown alinhado à direita -->
+          <div class="ms-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-fill me-2"></i>
+                  <span>Usuário</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                      <i class="bi bi-gear-fill me-2"></i>
+                      <span>Configurações</span>
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                      <i class="bi bi-box-arrow-left me-2"></i>
+                      <span>Sair</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="p-4">
+        <div class="container-fluid">
+          <!-- Header Section e Breadcrumbs na mesma linha -->
+          <div class="row mb-4 align-items-center">
+            <div class="col">
+              <h1 class="h2 mb-0">Bootstrap Sidebar - Visual Melhorado</h1>
+            </div>
+            <div class="col-auto">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Content Section -->
+          <div class="row">
+            <div class="col">
+              <div class="card shadow-sm">
+                <div class="card-header">
+                  <h5 class="card-title mb-0">Melhorias Implementadas</h5>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Visual dos Itens Filhos Melhorado</h5>
+                  <p class="card-text">
+                    As principais melhorias implementadas nos submenus incluem:
+                  </p>
+                  <ul>
+                    <li><strong>Hierarquia Visual Clara:</strong> Diferentes tons de verde para distinguir níveis</li>
+                    <li><strong>Indicadores Visuais:</strong> Pontos e bordas para identificar submenus</li>
+                    <li><strong>Espaçamento Adequado:</strong> Indentação progressiva para cada nível</li>
+                    <li><strong>Transições Suaves:</strong> Animações sutis nos hovers</li>
+                    <li><strong>Bordas Organizacionais:</strong> Separadores visuais discretos</li>
+                  </ul>
+                  <p>O design mantém a sobriedade necessária para um template administrativo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Demo content para testar scroll -->
+          <div class="row mt-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="card-title mb-0">Teste do Menu</h5>
+                </div>
+                <div class="card-body">
+                  <p><strong>Instruções:</strong> Experimente clicar nos itens "Auth" > "Outros" > "Sub Outros" > "Nível 4" na sidebar para ver a hierarquia completa.</p>
+                  <p>Note como agora existe uma progressão visual clara através de todos os níveis:</p>
+                  <ul>
+                    <li><strong>Nível 1:</strong> Itens principais com ícones</li>
+                    <li><strong>Nível 2:</strong> Submenus com pontos indicadores</li>
+                    <li><strong>Nível 3:</strong> Linhas conectoras e pontos menores</li>
+                    <li><strong>Nível 4:</strong> Indentação máxima com elementos visuais reduzidos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>
